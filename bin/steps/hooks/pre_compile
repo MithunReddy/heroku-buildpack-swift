@@ -3,5 +3,6 @@
 if [ -f bin/pre_compile ]; then
   echo "-----> Running pre-compile hook"
   chmod +x bin/pre_compile
+  apt-get install uuid-dev
   ./bin/pre_compile
 fi
