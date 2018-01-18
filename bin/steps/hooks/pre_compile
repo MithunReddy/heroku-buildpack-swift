@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
 
-if [ -f bin/pre_compile ]; then
-  echo "-----> Running pre-compile hook"
-  chmod +x bin/pre_compile
-  ./bin/pre_compile
-  apt-get install uuid-dev
-fi
+ echo "-----> Running pre-compile hook"
